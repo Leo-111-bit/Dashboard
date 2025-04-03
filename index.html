@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="all-1">
+    <div class="box-1">
+        <div class="menu">
+            <div class="dash"><h2>Dashboard</h2></div>
+            <div class="dropdown">
+                <a href="./usermange.html">User Management</a>
+                <a href="#">Setting</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </div>
+    <div class="top-box">
+        <h4>Current Date:  <span id="date"></span></h4>
+        <h4>Head Office Branch</h4>
+    </div>
+</div>
+<h2>Executive Dashboard</h2>  
+
+<div class="all-2">
+    
+    <div class="allbox-1">
+        <div class="all2-text">
+            <h4>Hi, Username <br>it good to see you again</h4>
+        </div>
+    </div>
+    <div class="allbox-2">
+        
+    </div>
+    <div class="midbox-1">
+        <h3>ACTIVE USERS</h3>
+        <h1 class="large-number">0</h1>
+    </div>
+    <div class="midbox-2">
+        <h3>INACTIVE USERS</h3>
+        <h1 class="large-number">0</h1>
+    </div>
+</div>
+
+
+<div class="all-3">
+    <div class="allbox-3">
+        
+    </div>
+    <div class="midbox-4">
+        
+    </div>
+</div>
+
+<div class="all-4">
+    <div class="allbox-4">
+        
+    </div>
+</div>
+
+
+<script>
+    var date = new Date()
+    var hour = date.getHours()
+    var day = date.getDay()
+    var month = date.getMonth()
+    var year = date.getFullYear()
+    document.getElementById("date").innerHTML = year +"/0"+month+"/0"+day
+</script>
+</body>
+</html>
